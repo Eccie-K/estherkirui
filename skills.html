@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="eng" class="full-height">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>"estherkirui"</title>
+          <link rel="stylesheet" href="css/bootstrap.css">
+      <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+      <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+     <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+      <!-- JQuery -->
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <!-- Bootstrap tooltips -->
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+       <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/js/mdb.min.js"></script>
+    </head>
+    <body>
+      <nav class=  "navbar sticky-top mb-1 navbar navbar-expand-lg navbar-dark " style="background: black">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+                  aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html"><b>Home</b>
+                        <span class="sr-only">(current)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html"><b>About</b></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="skills.html"><b>Skills</b></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="work.html"><b>Work</b></a>
+                    </li>
+                   
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html"><b>Contact</b></a>
+                      
+                    </li>
+                  </ul>
+                  
+                </div>
+              </nav>
+              <br>
+              <br>
+              <div class="skills">
+                <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+                
+              </div>
+              <br>
+              <hr class = "one">
+              <h6>Contact Details:</h6>
+<p class="details">
+<b>Mobile: </b>+254729977790<br>
+<b>Email:</b> estherkc100@gmail.com<br>
+<b>Linkedin:</b><a href="https://www.linkedin.com/in/esther-kirui-4614b4b9/" target="_blank" style="color:rgba(255, 255, 0, 0.829)">Linkedin</a>
+</p>
+    </body>
+</html>
+<style>
+body{
+    background-color: black;
+}
+
+.skills{
+  margin-left: 15em;
+  margin-right: 15em;
+
+}
+
+
+.one{
+    background-color:white;
+}
+
+h2{
+  text-align: center;
+  color:white;
+}
+
+.details{
+ 
+  color:white;
+  text-align: justify;
+  margin-left: 30em;;
+}
+
+h6{
+  color:white;
+  margin-left: 30em;
+}
+</style>
+
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	title: {
+		text: "My Technical Skills"
+	},
+	axisY: {
+		title: "",
+		suffix: ""
+	},
+	axisX: {
+		title: ""
+	},
+	data: [{
+		type: "column",
+		yValueFormatString: "",
+		dataPoints: [
+			{ label: "HTML", y: 8.5 },	
+			{ label: "CSS", y: 8.0 },
+      { label: "Research", y: 7.0 },		
+			{ label: "JavaScript", y: 6.5 },
+			{ label: "Vuejs", y: 6.0 },	
+      	{ label: "Angularjs", y: 5 },
+			{ label: "Python", y: 5 },
+			{ label: "Django", y: 4.5 },
+			{ label: "UX Design", y: 4.0 },
+			{ label: "Flask", y: 3.0 }
+			
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
